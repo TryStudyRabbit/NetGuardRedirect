@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ACCESS DENIED</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* -------- scary theme -------- */
+html,body{margin:0;height:100%;overflow:hidden}
+@keyframes pulse{0%{background:#5a0000}50%{background:#1a0000}100%{background:#5a0000}}
+body{
+  font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:#5a0000;
+  animation:pulse 2s infinite;
+}
+#skull{
+  width:120px;height:120px;margin-bottom:1rem;filter:drop-shadow(0 0 12px #000);
+}
+h1{
+  font-size:4rem;
+  margin:0 0 .5rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  text-shadow:0 0 18px #000;
+}
+p{
+  max-width:620px;
+  font-size:1.3rem;
+  line-height:1.45;
+  margin:0 20px;
+}
+strong{font-weight:900;text-decoration:underline}
+small{
+  position:absolute;
+  bottom:12px;
+  opacity:.4;
+  font-size:.75rem;
+}
+</style>
+</head>
+<body>
+  <!-- skull icon (inline SVG so no external files needed) -->
+  <svg id="skull" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+    <path d="M32 2C18.1 2 6.9 13.2 6.9 27.1c0 6.3 2.4 12.1 6.4 16.5V56c0 3.3 2.7 6 6 6h6v-8h8v8h6c3.3 0 6-2.7 6-6V43.6c4-4.4 6.4-10.2 6.4-16.5C57.1 13.2 45.9 2 32 2zm-8 26c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm16 0c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"/>
+  </svg>
+
+  <h1>Access&nbsp;Denied</h1>
+
+  <p>
+    This website has been <strong>blocked</strong> by the network safety policy.<br>
+    Your attempt has been <strong>logged</strong> and an alert has been sent to the system administrator.<br>
+    Further attempts may result in loss of computer privileges and additional disciplinary action.
+  </p>
+
+  <small>© 2025 Network Security Division</small>
+</body>
+</html>
